@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Verdana";
+}
+
+.menu{
+    float: left;
+    width: 20%;
+}
+
+.menuitem{
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.menuitem a{
+    text-decoration: none;
+}
+
+.menuitem:hover{
+    background-color: rgba(255, 0, 0, 0.212);
+    border-radius: 18px;
+}
+
+.main{
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.main h2:hover{
+    background-color: bisque;
+}
+
+.main p:hover{
+    font-weight: 600;
+}
+
+.right{
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+    transition: all 0.5s ease-in-out;
+}
+
+.right:hover{
+    background-color: rgb(70, 188, 228);
+}
+
+@media only screen and (max-width: 800px){
+    .menu{
+        width: 80%;
+        padding: 0;
+    }
+    
+    .right{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .menu, .main, .right{
+        width: 100%;
+    }
+}
